@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <title>Green Bus Stop Map</title>
+
+    <!-- Kết nối tới file CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Thư viện bản đồ Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </head>
+
+  <body>
+    <h1>🚌 Bản đồ Nhà chờ Xe buýt Thông minh</h1>
+    <p>Tìm và thêm các nhà chờ có năng lượng mặt trời và gió 🌞💨</p>
+
+    <!-- Vùng hiển thị bản đồ -->
+    <div id="map"></div>
+
+    <!-- Khu vực thêm nhà chờ mới -->
+    <div id="controls">
+      <h3>➕ Thêm nhà chờ xe buýt xanh mới</h3>
+      <input type="text" id="nameInput" placeholder="Tên nhà chờ" />
+      <input type="text" id="latInput" placeholder="Vĩ độ (lat)" />
+      <input type="text" id="lonInput" placeholder="Kinh độ (lon)" />
+      <button id="addBtn">Thêm vào bản đồ</button>
+    </div>
+
+    <!-- Kết nối tới file JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
